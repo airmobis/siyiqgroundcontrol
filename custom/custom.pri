@@ -60,14 +60,8 @@ CONFIG += AndroidHomeApp
 #    $$PWD/custom.qrc
 
 QML_IMPORT_PATH += \
-   $$PWD/res
-
-# Herelink specific custom sources
-# SOURCES += \
-#     $$PWD/src/HerelinkCorePlugin.cc \
-
-# HEADERS += \
-#     $$PWD/src/HerelinkCorePlugin.h \
+   $$PWD/res \
+   $$PWD/src
 
 INCLUDEPATH += \
     $$PWD/src \
@@ -75,8 +69,7 @@ INCLUDEPATH += \
 # Custom versions of a Herelink build should only add changes below here to prevent conflicts
 
 SOURCES += \
-    $$PWD/src/GeoWork.cc \
-    $$PWD/src/GeoWork_qmlinit.cc
+    $$PWD/src/GeoWork.cc
 
 HEADERS += \
     $$PWD/src/GeoWork.h

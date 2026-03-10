@@ -25,6 +25,9 @@ private:
 
     Q_PROPERTY(QJsonArray projectStates READ projectStates NOTIFY projectStatesChanged)
 
+    QML_SINGLETON
+    QML_ELEMENT
+
 public:
     enum class TokenStatus : std::uint8_t {
         None,
