@@ -58,6 +58,11 @@ GeoWork::GeoWork(QObject* parent)
     loadSettings();
 }
 
+GeoWork* GeoWork::instance() {
+    static GeoWork gw;
+    return &gw;
+}
+
 QByteArray GeoWork::authHeader() const {
     if (_bearerToken.isEmpty()) {
         return QByteArray {};

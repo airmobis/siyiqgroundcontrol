@@ -146,7 +146,6 @@ Item {
 
                     Image {
                         id: settingsIcon
-                        // Provide these SVGs in custom.qrc under prefix custom/img
                         source: (function(){
                             try {
                                 return GeoWork.tokenStatus === 1

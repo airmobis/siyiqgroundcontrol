@@ -21,7 +21,6 @@ Item {
     // Dim background; click to close
     Rectangle {
         anchors.fill: parent
-        //color: "#66000000"
         color: "#AA000000"   // darker than before so it’s clearly visible
         MouseArea { anchors.fill: parent; onClicked: panel.close() }
     }
@@ -37,8 +36,8 @@ Item {
 
         readonly property string defaultMarkerColor: "red"
 
-        x: 512
-        y: 240
+        x: 32
+        y: 32
 
         ColumnLayout {
             Layout.fillWidth: true
