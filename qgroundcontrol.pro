@@ -57,7 +57,7 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "SiYiQGroundControl"
+QGC_APP_NAME        = "Airmobis-QGroundControl"
 QGC_ORG_NAME        = "QGroundControl.org"
 QGC_ORG_DOMAIN      = "org.qgroundcontrol"
 QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
