@@ -25,9 +25,6 @@ private:
 
     Q_PROPERTY(QJsonArray projectStates READ projectStates NOTIFY projectStatesChanged)
 
-    QML_ELEMENT
-    QML_SINGLETON
-
 public:
     enum class TokenStatus : std::uint8_t {
         None,
@@ -36,6 +33,8 @@ public:
     };
 
     explicit GeoWork(QObject* parent = nullptr);
+
+    static GeoWork* instance();
 
     // Getters for QML
 
@@ -50,7 +49,6 @@ public slots:
     // --- Main flow used by QML ---
     // 1) Check session; if active task, POST project-marker-state {name}; cache stateId
     void checkActiveTaskAndFetchState(const QString& stateName);
-    void fetchProjectStates();
 
     // 2) Create a marker using current GPS from active vehicle
     void createMarker();

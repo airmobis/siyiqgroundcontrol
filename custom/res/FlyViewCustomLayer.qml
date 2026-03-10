@@ -150,11 +150,11 @@ Item {
                         source: (function(){
                             try {
                                 return GeoWork.tokenStatus === 1
-                                    ? "qrc:/custom/img/setting_OK.svg"
-                                    : "qrc:/custom/img/setting_BAD.svg"
+                                    ? "qrc:/airmobis/setting_OK.svg"
+                                    : "qrc:/airmobis/setting_BAD.svg"
                             } catch (e) {
                                 console.warn("[GeoWork] [QML] settings icon binding error:", e)
-                                return "qrc:/custom/img/setting_BAD.svg"
+                                return "qrc:/airmobis/setting_BAD.svg"
                             }
                         })()
 
@@ -207,8 +207,8 @@ Item {
                         visible: !createBtn.modeTransparent
 
                         source: createBtn.modeActive
-                                ? "qrc:/custom/img/icon-active.svg"
-                                : "qrc:/custom/img/icon-off.svg"
+                                ? "qrc:/airmobis/icon-active.svg"
+                                : "qrc:/airmobis/icon-off.svg"
                     }
 
                     MouseArea {

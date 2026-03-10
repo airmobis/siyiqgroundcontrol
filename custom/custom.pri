@@ -75,7 +75,8 @@ INCLUDEPATH += \
 # Custom versions of a Herelink build should only add changes below here to prevent conflicts
 
 SOURCES += \
-    $$PWD/src/GeoWork.cc
+    $$PWD/src/GeoWork.cc \
+    $$PWD/src/GeoWork_qmlinit.cc
 
 HEADERS += \
     $$PWD/src/GeoWork.h

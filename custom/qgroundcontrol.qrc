@@ -397,7 +397,26 @@
         <file>../resources/SiYi/AiRed.svg</file>
         <file>../resources/SiYi/+.svg</file>
     </qresource>
+
     <qresource prefix="/airmobis">
-        <file>res/GeoWorkSettingsPanel.qml</file>
+        <file alias="GeoWorkSettingsPanel.qml">res/GeoWorkSettingsPanel.qml</file>
+
+        <file alias="icon-active.svg">res/Images/icon-active.svg</file>
+        <file alias="icon-off.svg">res/Images/icon-off.svg</file>
+        <file alias="setting_OK.svg">res/Images/setting_OK.svg</file>
+        <file alias="setting_BAD.svg">res/Images/setting_BAD.svg</file>
+        <file alias="altitude.svg">res/Images/altitude.svg</file>
+        <file alias="attitude_crosshair.svg">res/Images/attitude_crosshair.svg</file>
+        <file alias="attitude_dial.svg">res/Images/attitude_dial.svg</file>
+        <file alias="attitude_pointer.svg">res/Images/attitude_pointer.svg</file>
+        <file alias="chronometer.svg">res/Images/chronometer.svg</file>
+        <file alias="compass_needle.svg">res/Images/compass_needle.svg</file>
+        <file alias="compass_pointer.svg">res/Images/compass_pointer.svg</file>
+        <file alias="distance.svg">res/Images/distance.svg</file>
+        <file alias="horizontal_speed.svg">res/Images/horizontal_speed.svg</file>
+        <file alias="microSD.svg">res/Images/microSD.svg</file>
+        <file alias="odometer.svg">res/Images/odometer.svg</file>
+        <file alias="vertical_speed.svg">res/Images/vertical_speed.svg</file>
+        <file alias="CustomAppIcon.png">res/Images/CustomAppIcon.png</file>
     </qresource>
 </RCC>
