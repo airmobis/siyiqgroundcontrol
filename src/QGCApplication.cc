@@ -541,10 +541,6 @@ void QGCApplication::_initCommon()
     qmlRegisterUncreatableType<SiYiCamera>("SiYi.Object", 1, 0, "SiYiCamera", kRefOnly);
     qmlRegisterUncreatableType<SiYiTransmitter>("SiYi.Object", 1, 0, "SiYiTransmitter", kRefOnly);
 
-    qmlRegisterSingletonType<GeoWork>("GeoWork", 1, 0, "GeoWork", [](QQmlEngine*, QJSEngine*) {
-        return GeoWork::instance();
-    });
-
     // Although this should really be in _initForNormalAppBoot putting it here allowws us to create unit tests which pop up more easily
     if(QFontDatabase::addApplicationFont(":/fonts/opensans") < 0) {
         qWarning() << "Could not load /fonts/opensans font";

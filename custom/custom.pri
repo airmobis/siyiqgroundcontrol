@@ -29,8 +29,8 @@ message(Custom QGC Version: $${CUSTOM_QGC_VERSION})
 
 # Branding
 
-DEFINES += CUSTOMHEADER=\"\\\"QGCCorePlugin.h\\\"\"
-DEFINES += CUSTOMCLASS=QGCCorePlugin
+DEFINES += CUSTOMHEADER=\"\\\"CustomPlugin.h\\\"\"
+DEFINES += CUSTOMCLASS=CustomPlugin
 
 TARGET   = Airmobis-QGroundControl
 DEFINES += QGC_APPLICATION_NAME='"\\\"Airmobis QGroundControl\\\""'
@@ -54,11 +54,6 @@ QGC_APP_COPYRIGHT   = "Copyright (C) 2026 Airmobis. All rights reserved."
 
 CONFIG += AndroidHomeApp
 
-# Our own, custom resources
-# Not yet used
-#RESOURCES += \
-#    $$PWD/custom.qrc
-
 QML_IMPORT_PATH += \
    $$PWD/res \
    $$PWD/src
@@ -66,10 +61,14 @@ QML_IMPORT_PATH += \
 INCLUDEPATH += \
     $$PWD/src \
 
-# Custom versions of a Herelink build should only add changes below here to prevent conflicts
+CONFIG += qmltypes
+QML_IMPORT_NAME = GeoWork
+QML_IMPORT_MAJOR_VERSION = 1
 
 SOURCES += \
-    $$PWD/src/GeoWork.cc
+    $$PWD/src/GeoWork.cc \
+    $$PWD/src/CustomPlugin.cc
 
 HEADERS += \
-    $$PWD/src/GeoWork.h
+    $$PWD/src/GeoWork.h \
+    $$PWD/src/CustomPlugin.h

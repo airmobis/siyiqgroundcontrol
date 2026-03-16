@@ -58,9 +58,13 @@ GeoWork::GeoWork(QObject* parent)
     loadSettings();
 }
 
-GeoWork* GeoWork::instance() {
+QObject* GeoWork::instance() {
     static GeoWork gw;
     return &gw;
+}
+
+QObject* GeoWork::instance(QQmlEngine*, QJSEngine*) {
+    return instance();
 }
 
 QByteArray GeoWork::authHeader() const {
