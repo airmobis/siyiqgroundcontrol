@@ -30,12 +30,11 @@ Item {
         radius: 10
         color: "white"
         border.width: 1
-        anchors.centerIn: parent
 
         readonly property string defaultMarkerColor: "red"
 
-        x: 32
-        y: 32
+        x: 8
+        y: 8
 
         ColumnLayout {
             Layout.fillWidth: true

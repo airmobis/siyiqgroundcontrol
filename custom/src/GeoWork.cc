@@ -63,10 +63,6 @@ QObject* GeoWork::instance() {
     return &gw;
 }
 
-QObject* GeoWork::instance(QQmlEngine*, QJSEngine*) {
-    return instance();
-}
-
 QByteArray GeoWork::authHeader() const {
     if (_bearerToken.isEmpty()) {
         return QByteArray {};

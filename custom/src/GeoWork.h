@@ -25,6 +25,9 @@ private:
 
     Q_PROPERTY(QJsonArray projectStates READ projectStates NOTIFY projectStatesChanged)
 
+    QML_ELEMENT
+    QML_SINGLETON
+
 public:
     enum class TokenStatus : std::uint8_t {
         None,
@@ -35,7 +38,6 @@ public:
     explicit GeoWork(QObject* parent = nullptr);
 
     static QObject* instance();
-    static QObject* instance(QQmlEngine* qmlEng, QJSEngine* jsEngine);
 
     // Getters for QML
 

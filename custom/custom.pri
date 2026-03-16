@@ -61,10 +61,6 @@ QML_IMPORT_PATH += \
 INCLUDEPATH += \
     $$PWD/src \
 
-CONFIG += qmltypes
-QML_IMPORT_NAME = GeoWork
-QML_IMPORT_MAJOR_VERSION = 1
-
 SOURCES += \
     $$PWD/src/GeoWork.cc \
     $$PWD/src/CustomPlugin.cc
