@@ -139,7 +139,7 @@ Item {
         anchors.right: parent.right
         width: _rightPanelWidth
         state: _verticalCenter ? "verticalCenter" : "topAnchor"
-        visible: !SiYi.hideWidgets
+        visible: false
         states: [
             State {
                 name: "verticalCenter"
